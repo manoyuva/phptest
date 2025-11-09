@@ -1,3 +1,37 @@
-<?php
-echo "Hello, World!";
-?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML with Embedded PHP</title>
+</head>
+<body>
+
+    <h1>Welcome to My Dynamic Page</h1>
+
+    <?php
+        // PHP code block 1
+        $name = "User";
+        echo "<p>Hello, " . $name . "!</p>";
+    ?>
+
+    <p>This is some static HTML content.</p>
+
+    <?php
+        // PHP code block 2
+        $currentYear = date("Y");
+        echo "<p>Current Year: " . $currentYear . "</p>";
+    ?>
+
+    <p>Another paragraph of static HTML.</p>
+
+    <?php
+        // PHP code block 3 - Conditional content
+        $isLoggedIn = true;
+        if ($isLoggedIn) {
+            echo "<p>You are logged in.</p>";
+        } else {
+            echo "<p>Please log in to access more features.</p>";
+        }
+    ?>
+
+</body>
+</html>
